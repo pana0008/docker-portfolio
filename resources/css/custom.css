@@ -1,0 +1,1071 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #faebd7;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+/*Header*/
+.container {
+    margin: 0 auto;
+    max-width: 940px;
+    padding: 0 10px;
+}
+
+.header {
+    background: url(https://images.unsplash.com/photo-1590258335103-0664be2e92bd?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YWVzdGhldGljJTIwZm9yZXN0fGVufDB8fDB8fHww) no-repeat center center;
+    background-size: cover;
+    height: 500px;
+    text-align: center;
+    z-index: 1;
+    object-fit: contain;
+}
+
+.header .container {
+    position: relative;
+    top: 200px;
+}
+
+.header h1 {
+    color: #faebd7;
+    line-height: 100px;
+    font-size: 80px;
+    margin-top: 0;
+    margin-bottom: 80px;
+    font-family: Brush Script MT, cursive;
+}
+
+.header h2 {
+    color: #faebd7;
+    line-height: 100px;
+    font-size: 140px;
+    margin-top: -50px;
+    margin-bottom: 80px;
+    font-family: Brush Script MT, cursive;
+    text-align: center;
+}
+
+.error-header {
+    color: #faebd7;
+    margin-top: -80px;
+    margin-bottom: 70px;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 1.4;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.map-text {
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #faebd7;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: -4rem;
+    text-align: center;
+}
+
+.map-subtext {
+    display: block;
+    font-size: 24px;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.content {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.home-button {
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+
+.note a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold; /* optional */
+}
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background-color: #f1e7d9; /* soft beige */
+    padding: 2.5rem;
+    border-radius: 2rem;
+    width: 90%;
+    max-width: 480px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    font-family: Georgia, serif;
+    color: #3b2a23;
+}
+
+.modal-content h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.modal-content label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.modal-content textarea {
+    width: 100%;
+    height: 150px;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    resize: none;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.modal-content button {
+    margin-top: 1.5rem;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.modal-content button[type="submit"] {
+    background-color: #4b3621; /* dark brown */
+    color: #fff;
+    margin-right: 1rem;
+}
+
+.modal-content button[type="submit"]:hover {
+    background-color: #3a2a1a;
+}
+
+.modal-content button[type="button"],
+.modal-content .close-button {
+    background-color: #e6e3e0;
+    color: #3b2a23;
+}
+
+.modal-content button[type="button"]:hover,
+.modal-content .close-button:hover {
+    background-color: #d4d0cb;
+}
+
+/*Navigation Menus*/
+.navigation {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(60, 55, 40);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+    }
+
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: inline-block;
+        padding: 14px 16px;
+        text-align: center;
+        color: antiquewhite;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: rgb(30, 28, 20);
+        transition: background .5s;
+    }
+
+    .active {
+        background-color: rgb(80, 75, 57);
+    }
+
+}
+
+
+.aside {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 25px;
+        padding-top: 120px;
+        width: 250px;
+        background-color: rgb(60, 55, 40);
+        margin-top: -562px;
+        z-index: 9;
+    }
+
+    li a {
+        display: block;
+        color: antiquewhite;
+        padding: 25px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: rgb(30, 28, 20);
+        transition: background .5s;
+    }
+
+
+}
+
+
+.border {
+    background: rgb(60, 55, 40);
+    height: 5px;
+    width: 100%;
+}
+
+/*Home Page*/
+.who-am-i {
+    color: rgb(60, 55, 40);
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+    margin-right: 500px;
+}
+
+.why-ict {
+    color: rgb(60, 55, 40);
+    text-align: center;
+    font-size: 40px;
+    margin-right: 500px;
+}
+
+.about-me {
+    color: rgb(60, 55, 40);
+    margin-left: 130px;
+    text-align: justify;
+    font-size: 23px;
+    margin-right: 600px;
+}
+
+.photo-of-me {
+    position: absolute;
+    left: 1050px;
+    bottom: -400px;
+    border-radius: 15px;
+    overflow: hidden
+}
+
+.me-with-two-laptops {
+    position: absolute;
+    left: 950px;
+    bottom: -1100px;
+    border-radius: 15px;
+    overflow: hidden
+}
+
+/*FAQ Page*/
+details {
+    padding: 6px;
+    background-color: rgb(222, 202, 175);
+    border-radius: 15px;
+    width: 50%;
+    text-align: left;
+    margin-top: 30px;
+    font-size: 18px;
+    color: rgb(60, 55, 40);
+}
+
+summary {
+    list-style-position: outside;
+    margin-left: 30px;
+    padding: 10px 10px 10px 20px;
+    border-radius: 5px;
+    list-style-type: '🤎';
+}
+
+details[open]>summary {
+    border-bottom: 1px solid antiquewhite;
+    list-style-type: '🤎';
+}
+
+.answer {
+    padding: 10px;
+    text-align: justify;
+}
+
+.faq-link {
+    color: rgb(146, 113, 71);
+    text-decoration: none;
+}
+
+/*Profile Page*/
+.my-info {
+    color: rgb(60, 55, 40);
+    margin-left: 130px;
+    text-align: left;
+    font-size: 18px;
+    margin-right: 600px;
+    margin-top: 70px;
+}
+
+.portrait-photo {
+    position: absolute;
+    left: 980px;
+    bottom: -180px;
+    border-radius: 15px;
+    overflow: hidden
+}
+
+#me-as-a-child {
+    position: absolute;
+    left: 980px;
+    bottom: -600px;
+    border-radius: 15px;
+    overflow: hidden
+}
+
+#screenshot {
+    position: absolute;
+    left: 980px;
+    bottom: -960px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+#frog {
+    position: absolute;
+    left: 1050px;
+    bottom: -1460px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+#lotr {
+    position: absolute;
+    left: 970px;
+    bottom: -1830px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.introduction {
+    font-size: 40px;
+}
+
+.profile-text {
+    font-size: 23px;
+}
+
+.characteristics {
+    font-size: 23px;
+    line-height: 2.5;
+}
+
+.hobbies {
+    font-size: 23px;
+}
+
+.hobbies ul {
+    line-height: 1.5;
+}
+
+.spotify {
+    font-size: 23px;
+}
+
+.spotify ul {
+    line-height: 2.5;
+}
+
+.spotify a {
+    color: rgb(60, 55, 40);
+    text-decoration: none;
+}
+
+.link {
+    color: rgb(60, 55, 40);
+    text-decoration: none;
+
+
+}
+
+a:hover {
+    color: rgb(159, 129, 97);
+}
+
+
+/*Blog Main Page*/
+.posts {
+    margin-top: 50px;
+}
+
+.blog-post {
+    padding: 6px;
+    background-color: rgb(222, 202, 175);
+    border-radius: 15px;
+    width: 50%;
+    text-align: left;
+    margin-top: 30px;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+.blog-post img {
+    border-radius: 15px;
+    padding: 10px;
+    float: right;
+}
+
+
+
+.post-title {
+    color: rgb(60, 55, 40);
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.post-text {
+    color: rgb(60, 55, 40);
+    margin-left: 20px;
+}
+
+.date {
+    color: rgb(60, 55, 40);
+    margin-left: 20px;
+    margin-top: -18px;
+}
+
+.button {
+    position: relative;
+    text-decoration: none;
+    color: antiquewhite;
+    background-color: rgb(60, 55, 40);
+    padding: 18px;
+    border-radius: 50px;
+    bottom: -10px;
+    left: 15px;
+
+}
+
+.button:hover {
+    background-color: antiquewhite;
+    transition: 0.5s;
+}
+
+#create-blog {
+    margin-top: 20px;
+}
+
+/*Blog Return Button*/
+.return-button {
+    position: relative;
+    top: 50px;
+    font-size: 2em;
+
+}
+
+.return-button a {
+    text-decoration: none;
+    padding: 12px;
+    background-color: rgb(60, 55, 40);
+    margin: 40px;
+    border-radius: 50px;
+}
+
+.return-button i {
+    width: 40px;
+    text-align: center;
+}
+
+.return-button a i{
+    color: antiquewhite;
+}
+
+.return-button a:hover {
+    background-color: antiquewhite;
+    transition: 0.5s;
+}
+
+.return-button a:hover i {
+    color: rgb(60, 55, 40);
+    transition: 0.5s;
+}
+
+
+/*Study Choice Blog Post*/
+.study-choice-title {
+    color: rgb(60, 55, 40);
+    margin-left: 130px;
+    text-align: left;
+    font-size: 18px;
+    margin-right: 600px;
+    margin-top: 70px;
+    font-size: 40px;
+}
+
+.study-choice-text {
+    color: rgb(60, 55, 40);
+    margin-left: 130px;
+    text-align: justify;
+    font-size: 23px;
+    margin-right: 700px;
+}
+
+#first-code {
+    position: absolute;
+    left: 940px;
+    bottom: -670px;
+    overflow: hidden;
+    border-radius: 15px;
+    width: 500px;
+}
+
+
+
+/*SWOT Analysis Post*/
+.swot-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    background-color: rgb(222, 202, 175);
+    border-radius: 15px;
+    width: 30%;
+    margin-top: 30px;
+    flex-basis: content;
+    overflow: hidden;
+    font-size: 16px;
+    margin-left: 130px;
+    border: 1px solid rgb(60, 55, 40) ;
+}
+
+#strengths {
+    position: relative;
+    margin-left: 700px;
+    margin-right: 70px;
+    font-size: 22px;
+    text-align: justify;
+    bottom: 170px;
+
+}
+
+#weaknesses {
+    position: relative;
+    margin-left: 700px;
+    margin-right: 70px;
+    font-size: 22px;
+    text-align: justify;
+    bottom: 170px;
+}
+
+#opportunities {
+    position: relative;
+    margin-left: 700px;
+    margin-right: 70px;
+    font-size: 22px;
+    text-align: justify;
+    bottom: 170px;
+}
+
+#threats {
+    position: relative;
+    margin-left: 700px;
+    margin-right: 70px;
+    font-size: 22px;
+    text-align: justify;
+    bottom: 170px;
+}
+
+
+/*Programming Experience Blog Post*/
+.programming-title {
+    color: rgb(60, 55, 40);
+    margin-left: 130px;
+    text-align: left;
+    font-size: 18px;
+    margin-right: 600px;
+    margin-top: 70px;
+    font-size: 40px;
+}
+
+.programming-text {
+    color: rgb(60, 55, 40);
+    margin-left: 130px;
+    text-align: justify;
+    font-size: 23px;
+    margin-right: 700px;
+}
+
+#certificate-1 {
+    position: absolute;
+    left: 940px;
+    bottom: -250px;
+    overflow: hidden;
+    border-radius: 15px;
+    width: 300px;
+
+}
+
+#certificate-2 {
+    position: absolute;
+    left: 1200px;
+    bottom: -350px;
+    overflow: hidden;
+    border-radius: 15px;
+    width: 300px;
+}
+
+
+/*First Feedback Post*/
+.feedback-text {
+    color: rgb(60, 55, 40);
+    margin-left: 130px;
+    text-align: justify;
+    font-size: 23px;
+    margin-right: 700px;
+    margin-top: 70px;
+}
+
+#feedback-forms {
+    width: 560px;
+    position: absolute;
+    left: 890px;
+    bottom: -330px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+/*Profession Blog Post*/
+.profession-title {
+    color: rgb(60, 55, 40);
+    margin-left: 130px;
+    text-align: left;
+    font-size: 18px;
+    margin-right: 620px;
+    margin-top: 70px;
+    font-size: 40px;
+}
+
+
+.profession-text {
+    color: rgb(60, 55, 40);
+    margin-left: 130px;
+    text-align: justify;
+    font-size: 23px;
+    margin-right: 700px;
+}
+
+#from-software {
+    position: absolute;
+    left: 860px;
+    bottom: -350px;
+    overflow: hidden;
+    border-radius: 15px;
+    width: 650px;
+}
+
+#cd-projekt {
+    position: absolute;
+    left: 860px;
+    bottom: -790px;
+    overflow: hidden;
+    border-radius: 15px;
+    width: 650px;
+}
+
+#baldurs-gate {
+    position: absolute;
+    left: 860px;
+    bottom: -1250px;
+    overflow: hidden;
+    border-radius: 15px;
+    width: 650px ;
+}
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: rgb(60, 55, 40);
+}
+
+.footer-section {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: antiquewhite;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.icons a i {
+    font-size: 2em;
+    color: rgb(60, 55, 40);
+    opacity: 0.9;
+}
+
+
+.icons a:hover {
+    background-color: rgb(60, 55, 40);
+    transition: 0.5s;
+}
+
+.icons a:hover i {
+    color: antiquewhite;
+    transition: 0.5s;
+}
+
+.footer-nav {
+    margin: 30px 0;
+}
+
+.footer-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+
+}
+
+.footer-nav ul li a {
+    color: antiquewhite;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+
+.footer-nav ul li a:hover {
+    opacity: 1;
+}
+
+
+@media (max-width: 700px) {
+    .footer-nav ul {
+        flex-direction: column;
+    }
+
+    .footer-nav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .icons a {
+        padding: 8px;
+        margin: 4px;
+    }
+}
+
+.hz-logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    left: 43.25%;
+    bottom: 20px;
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.hz-logo:hover {
+    background-color: rgb(60, 55, 40);
+    transition: 0.5s;
+}
+
+
+
+/*Table*/
+table {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 1200px;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.227);
+    margin-left: auto;
+    margin-right: auto;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+
+td,
+th {
+    border: 1.5px solid rgb(60, 55, 40)
+}
+
+
+th,
+td {
+    padding: 15px 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(60, 55, 40);
+}
+
+th {
+    text-align: center;
+    color: antiquewhite;
+
+}
+
+thead {
+    th {
+        background-color: rgb(80, 75, 57);
+    }
+}
+
+
+.grade-input {
+    width: 50px;
+}
+
+
+/*Progress Bar*/
+.completeness-bar {
+    position: relative;
+    width: 60%;
+    height: 40px;
+    border: 1px solid rgb(80, 75, 57);
+    border-radius: 20px;
+    margin-left: 20%;
+    margin-bottom: 30px;
+}
+
+.completeness-percentage {
+    height: 100%;
+    background: rgba(107, 103, 82, 0.99);
+    width: 75%;
+    border-radius: 20px;
+
+    #success {
+        position: absolute;
+        height: 170%;
+        width: auto;
+        margin-left: 70%;
+        display: flex;
+        align-items: center;
+    }
+
+    #maximum {
+        position: absolute;
+        height: 170%;
+        width: auto;
+        margin-left: 94%;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+    }
+
+}
+
+#progress-text {
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/* Main Content Box Styling */
+.create-box {
+    width: 60%; /* Adjust width as needed */
+    max-width: 800px; /* Max width to prevent it from getting too wide */
+    margin: 40px auto; /* Center the box horizontally with some top/bottom margin */
+    padding: 30px 40px;
+    background-color: #fcefdc; /* Same as body background to blend in */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow around the form area */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.create-box h2 {
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Form Field Styling */
+.field {
+    margin-bottom: 20px;
+}
+
+.label {
+    display: block;
+    font-size: 1.1em;
+    color: #444;
+    margin-bottom: 8px;
+    font-weight: bold; /* Labels in the image appear bold */
+}
+
+/* Add an asterisk for required fields, similar to the image */
+.label::after {
+    content: ' *';
+    color: #e74c3c; /* Red color for the asterisk */
+}
+
+
+.control .input.is-invalid,
+.control textarea.is-invalid {
+    border-color: #e74c3c; /* Red color for invalid fields */
+    box-shadow: 0 0 0 0.2rem rgba(231, 76, 60, 0.25); /* Optional: subtle red glow */
+}
+
+/* Update this existing rule or add a new one */
+.control .input::placeholder,
+.control textarea::placeholder {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* You might also want to adjust color if needed for consistency */
+    color: #a0a0a0; /* Slightly darker grey for better visibility */
+    opacity: 1; /* Ensures the placeholder is fully visible in all browsers */
+}
+
+/* Also ensure the main input/textarea styles use the same font for consistency once text is entered */
+.control .input,
+.control textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #d3b89b; /* A light brown border */
+    border-radius: 5px;
+    font-size: 1em;
+    color: #555;
+    background-color: #fff; /* White background for input fields */
+    box-sizing: border-box; /* Crucial for full width with padding */
+    outline: none; /* Remove default focus outline */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Ensure entered text also matches */
+}
+.control .input:focus,
+.control textarea:focus {
+    border-color: #a0846c; /* Slightly darker border on focus */
+    box-shadow: 0 0 5px rgba(160, 132, 108, 0.5);
+}
+
+/* Specific styling for the textarea (Body) */
+.control textarea {
+    min-height: 150px; /* Make the body field taller */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+/* Error Messages */
+.error-message {
+    color: #e74c3c; /* Red for error messages */
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: block; /* Ensure it takes up its own line */
+}
+
+/* Alert/Error Box (for Laravel errors) */
+.alert.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.alert-danger ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.alert-danger li {
+    margin-bottom: 5px;
+}
+
+/* --- Common Button Styles --- */
+.button-primary,
+.button-secondary {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px; /* Slightly rounded corners */
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    min-width: 120px; /* Ensure buttons have a minimum width */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Use your main font */
+    font-weight: bold; /* Buttons in image appear bold */
+    text-decoration: none; /* In case you use 'a' tags styled as buttons */
+    display: inline-flex; /* For better alignment if using icons or specific text layout */
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- Primary Button (Submit) Styles --- */
+.button-primary {
+    background-color: #5f4a3e; /* Dark brown from your color palette */
+    color: #fff; /* White text */
+}
+
+.button-primary:hover {
+    background-color: #4a3a30; /* Darker brown on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Secondary Button (Cancel) Styles --- */
+.button-secondary {
+    background-color: #dcdcdc; /* Light grey */
+    color: #333; /* Darker text */
+    border: 1px solid #c0c0c0; /* Subtle border for definition */
+}
+
+.button-secondary:hover {
+    background-color: #c0c0c0; /* Slightly darker grey on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Keep your .field.is-grouped to arrange buttons */
+.field.is-grouped {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    gap: 20px; /* Space between buttons */
+    margin-top: 30px;
+}
+
